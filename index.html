@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mahdi Fooladgar (professormahi)</title>
-    <meta name="description" content="Mahdi Fooladgar Profile and Resume">
+    <meta name="description" content="Mahdi Fooladgar Profile">
     <meta name="keywords" content="Mahdi Fooladgar, Fooladgar, Blockchain, Software Engineering">
     <meta name="author" content="Mahdi Fooladgar">
 
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+
+    <style>
+        .farsi-font {
+            font-family: Vazirmatn, sans-serif !important;
+        }
+    </style>
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover bg-gray-200">
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover bg-gray-200" dir="ltr">
     <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
         <!--Main Col-->
@@ -21,42 +29,35 @@
             class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl opacity-80 mx-6 lg:mx-0 bg-white">
 
 
-            <div class="p-4 md:p-12 md:pb-8 text-center lg:text-left">
+            <div class="p-4 md:p-12 md:pb-8 text-center lg:text-start">
                 <!-- Image for mobile view-->
                 <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
                     style="background-image: url('images/mobile-image.jpeg')"></div>
 
-                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Mahdi Fooladgar</h1>
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0" data-lang-key="name"></h1>
                 <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
                 <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
-                    <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
+                    <svg class="h-4 fill-current text-green-700 p-0 ltr:pr-4 rtl:pl-4"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path
                             d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z">
                         </path>
                     </svg>
-                    Software and Security Engineer
+                    <span data-lang-key="expertise"></span>
                 </p>
                 <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
-                    <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="h-4 fill-current text-green-700 ltr:pr-4 rtl:pl-4" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20">
                         <path
                             d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z">
                         </path>
                     </svg>
-                    Isfahan, Iran
+                    <span data-lang-key="location"></span>
                 </p>
-                <p class="pt-8 text-sm text-justify">
-                    My name is Mahdi Fooladgar. I am a Ph.D. candidate in Computer Engineering at
-                    <a class="text-green-900 hover:underline" href="https://ut.ac.ir/en">University of Tehran</a>
-                    researching testing blockchain smart
-                    contracts. Also, I'm working as a product manager at
-                    <a class="text-green-900 hover:underline" href="https://payampardaz.com/">PayamPardaz</a>
-                    designing network security software.
-                </p>
+                <p class="pt-8 text-sm text-justify" data-lang-key-html="about"></p>
 
-                <div
-                    class="mt-16 mb-4 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+                <div class="mt-16 mb-4 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
+                    dir="ltr">
                     <a class="link" target="_blank" href="mailto:mahdi.fooladgar@yahoo.com" data-tippy-content="Email">
                         <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" role="img"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +67,16 @@
                         </svg>
                     </a>
                     <a class="link" target="_blank" href="https://twitter.com/FooladgarMahdi"
-                        data-tippy-content="Twitter">
+                        data-tippy-content="Twitter" data-hide-if-lang="فـا">
+                        <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" role="img"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Twitter</title>
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a class="link" target="_blank" href="https://twitter.com/professormahi"
+                        data-tippy-content="Twitter" data-hide-if-lang="EN">
                         <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" role="img"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>Twitter</title>
@@ -127,6 +137,41 @@
                                 d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z" />
                         </svg>
                     </a>
+                    <a class="link pl-2 pr-2" target="_blank" href="https://virgool.io/@professormahi"
+                        data-tippy-content="Virgool" data-hide-if-lang="EN">
+                        <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="10 7.12 14 20.13">
+                            <path
+                                d="M16.9078 27.2487C15.791 26.5116 14.695 25.7878 13.5645 25.044C14.247 24.1209 14.9225 23.2244 15.5636 22.3611C14.8673 22.0822 14.1504 21.8829 13.5369 21.5177C11.1174 20.0899 9.81458 18.0246 10.0214 15.2488C10.2351 12.3666 11.8343 10.3412 14.6054 9.37827C19.279 7.75791 23.222 10.9123 23.87 14.3921C24.1526 15.9062 24.0009 17.3937 23.1531 18.7153C22.2983 20.0501 21.347 21.3318 20.4095 22.6134C19.3342 24.0744 18.2244 25.5155 17.1352 26.9632C17.0732 27.0429 17.0112 27.1226 16.9078 27.2487Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M17.4644 7.12326C18.1079 7.4863 18.7397 7.84273 19.3891 8.20907C19.0528 8.75174 17.6882 11.0348 17.3725 11.5428C17.7645 11.6714 18.1687 11.753 18.5183 11.927C19.9048 12.6167 20.6967 13.7187 20.6969 15.2761C20.6991 16.8962 19.9002 18.103 18.4218 18.7569C15.924 19.8687 13.6294 18.2736 13.1369 16.3614C12.9188 15.5291 12.9412 14.686 13.3595 13.9121C13.7753 13.129 14.2438 12.3757 14.7099 11.6134"
+                                fill="currentColor"></path>
+                            <path
+                                d="M17.3306 7.12436C17.9741 7.4874 18.6059 7.84383 19.2553 8.21017C18.919 8.75284 17.5544 11.0359 17.2387 11.5439C17.6307 11.6725 18.0349 11.7541 18.3845 11.9281C19.771 12.6178 20.5629 13.7198 20.5631 15.2772C20.5653 16.8973 19.7664 18.1041 18.288 18.758C15.7902 19.8698 13.4957 18.2747 13.0031 16.3625C12.785 15.5302 12.8074 14.6871 13.2257 13.9132C13.6415 13.1301 14.11 12.3768 14.5761 11.6145"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                    <a class="link" target="_blank" href="https://zeeg.me/fooladgar/"
+                        data-tippy-content="ZEEG" data-hide-if-lang="EN">
+                        <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="18.18 0 29.39 28.28">
+                            <path
+                                d="M29.146 1.40395C29.146 0.628571 28.5175 0 27.7421 0C26.9667 0 26.3381 0.628571 26.3381 1.40395V3.94615C26.3381 4.72153 26.9667 5.35011 27.7421 5.35011C28.5175 5.35011 29.146 4.72153 29.146 3.94615V1.40395Z"
+                                fill="#FF9934"></path>
+                            <path
+                                d="M39.4131 1.40395C39.4131 0.628571 38.7846 0 38.0092 0C37.2338 0 36.6052 0.628571 36.6052 1.40395V3.94615C36.6052 4.72153 37.2338 5.35011 38.0092 5.35011C38.7846 5.35011 39.4131 4.72153 39.4131 3.94615V1.40395Z"
+                                fill="#FF9934"></path>
+                            <path
+                                d="M36.4483 11.7189H21.1992V5.59168C21.1992 5.3466 21.3259 5.22406 21.6116 5.22406H24.4354C24.5127 5.23581 24.5917 5.22929 24.6661 5.20503C24.7404 5.18077 24.808 5.13944 24.8635 5.08435C24.919 5.02925 24.9608 4.96194 24.9856 4.88778C25.0104 4.81362 25.0175 4.73468 25.0063 4.65729V3.23271C25.0175 3.15532 25.0104 3.07638 24.9856 3.00223C24.9608 2.92807 24.919 2.86075 24.8635 2.80565C24.808 2.75056 24.7404 2.70923 24.6661 2.68497C24.5917 2.66071 24.5127 2.65419 24.4354 2.66594H18.7554C18.6794 2.65373 18.6015 2.65939 18.528 2.68248C18.4546 2.70556 18.3875 2.74543 18.3321 2.79894C18.2767 2.85245 18.2345 2.91811 18.2089 2.99075C18.1833 3.06338 18.1749 3.14098 18.1845 3.2174V27.7132C18.1871 27.8634 18.2482 28.0067 18.3548 28.1126C18.4615 28.2184 18.6052 28.2785 18.7554 28.28H26.4662C26.5891 28.2782 26.7067 28.2297 26.7951 28.1444C26.8835 28.059 26.9362 27.9432 26.9423 27.8205V26.1814C26.9362 26.0587 26.8835 25.9429 26.7951 25.8575C26.7067 25.7722 26.5891 25.7237 26.4662 25.7219H21.6116C21.3259 25.7219 21.1992 25.6147 21.1992 25.3684V14.3082H36.4483C36.5097 14.3093 36.5708 14.2983 36.6279 14.2758C36.6851 14.2533 36.7373 14.2197 36.7815 14.1771C36.8257 14.1344 36.8611 14.0834 36.8856 14.0271C36.9101 13.9707 36.9232 13.9101 36.9243 13.8487V12.179C36.9233 12.1175 36.9102 12.0568 36.8857 12.0004C36.8613 11.944 36.8259 11.893 36.7817 11.8502C36.7375 11.8075 36.6853 11.7739 36.6281 11.7514C36.5709 11.7288 36.5098 11.7178 36.4483 11.7189Z"
+                                ></path>
+                            <path
+                                d="M46.9914 2.68118H41.2954C41.2181 2.66943 41.1391 2.67594 41.0648 2.7002C40.9905 2.72446 40.9228 2.7658 40.8673 2.82089C40.8118 2.87598 40.77 2.9433 40.7452 3.01746C40.7204 3.09162 40.7133 3.17056 40.7245 3.24795V4.68784C40.715 4.76426 40.7233 4.84186 40.7489 4.91449C40.7745 4.98712 40.8167 5.05279 40.8721 5.1063C40.9275 5.1598 40.9946 5.19967 41.0681 5.22276C41.1415 5.24584 41.2194 5.2515 41.2954 5.23929H44.1351C44.4209 5.23929 44.5476 5.36183 44.5476 5.60692V11.7341H39.6293C39.5679 11.733 39.5068 11.744 39.4496 11.7665C39.3925 11.7891 39.3403 11.8226 39.2961 11.8653C39.2519 11.9079 39.2165 11.9589 39.192 12.0153C39.1675 12.0716 39.1543 12.1322 39.1533 12.1937V13.8633C39.1543 13.9248 39.1675 13.9854 39.192 14.0417C39.2165 14.0981 39.2519 14.149 39.2961 14.1917C39.3403 14.2344 39.3925 14.2679 39.4496 14.2904C39.5068 14.3129 39.5679 14.324 39.6293 14.3229H44.5476V25.3677C44.5476 25.6128 44.4209 25.7212 44.1351 25.7212H29.6667C29.6053 25.7201 29.5442 25.7311 29.4871 25.7536C29.4299 25.7761 29.3777 25.8097 29.3335 25.8524C29.2893 25.895 29.2539 25.946 29.2294 26.0024C29.2049 26.0587 29.1917 26.1193 29.1907 26.1808V27.8198C29.1917 27.8812 29.2049 27.9418 29.2294 27.9982C29.2539 28.0545 29.2893 28.1055 29.3335 28.1482C29.3777 28.1908 29.4299 28.2244 29.4871 28.2469C29.5442 28.2694 29.6053 28.2804 29.6667 28.2793H46.992C47.1422 28.2778 47.2859 28.2177 47.3925 28.1119C47.4991 28.006 47.5602 27.8628 47.5628 27.7126V3.23263C47.5724 3.15615 47.5641 3.07849 47.5384 3.00581C47.5128 2.93312 47.4706 2.86742 47.4151 2.8139C47.3596 2.76038 47.2924 2.72052 47.2189 2.69749C47.1453 2.67445 47.0675 2.66886 46.9914 2.68118Z"
+                                ></path>
+                            <path
+                                d="M34.0736 5.36251C34.8142 5.36251 35.4146 4.7623 35.4146 4.02189C35.4146 3.28149 34.8142 2.68127 34.0736 2.68127L31.6846 2.68127C30.9441 2.68127 30.3437 3.28149 30.3437 4.02189C30.3437 4.7623 30.9441 5.36251 31.6846 5.36251H34.0736Z"
+                                ></path>
+                        </svg>
+                    </a>
                     <a class="link" href="#" data-tippy-content="Buy Me a Coffee">
                         <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" role="img"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +191,6 @@
         <div class="w-full lg:w-2/5">
             <!-- Big profile image for side bar (desktop) -->
             <img src="images/fullsize-image.jpeg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-
         </div>
 
 
@@ -161,7 +205,11 @@
                 </svg>
             </button>
         </div>
-
+        <div class="absolute top-12 right-0 h-12 w-18 p-4 pr-6 text-green-900 text-xl">
+            <button class="js-change-lang focus:outline-none farsi-font" onclick="changeLanguage();">
+                فـا
+            </button>
+        </div>
     </div>
 
     <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
@@ -180,7 +228,6 @@
 
 
         toggle.addEventListener('click', () => {
-
             if (body.classList.contains('text-gray-900')) {
                 toggle.innerHTML = `
                 <svg class="h-8 fill-current text-green-900" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -210,6 +257,81 @@
 
             }
         });
+
+        i18n = {
+            "EN": {
+                name: "Mahdi Fooladgar",
+                expertise: "Software and Security Engineer",
+                location: "Isfahan, Iran",
+                about: `
+                    My name is Mahdi Fooladgar. I am a Ph.D. candidate in Computer Engineering at
+                    <a class="text-green-900 hover:underline" href="https://ut.ac.ir/en">University of Tehran</a>
+                    researching testing blockchain smart
+                    contracts. Also, I'm working as a product manager at
+                    <a class="text-green-900 hover:underline" href="https://payampardaz.com/">PayamPardaz</a>
+                    designing network security software.
+                `,
+            },
+            "فـا": {
+                name: "مهدی فولادگر",
+                expertise: "مهندس نرم‌افزار و متخصص امنیت",
+                location: "اصفهان، ایران",
+                about: `
+                دانشجوی دکتری مهندسی نرم‌افزار از 
+                    <a href="https://ut.ac.ir/en">دانشگاه تهران</a>، <br />                    
+                    علاقه‌مند به مباحث امنیتی، بلاک‌چین و نظریه بازی‌ها،
+                    <br />
+                     و مدیر محصول سامان
+                    <a href="https://payampardaz.com/">شرکت پیام‌پرداز</a>.
+                `,
+            }
+        }
+
+        function setMessages(language) {
+            document.querySelectorAll('[data-lang-key]').forEach(elem => {
+                elem.innerText = i18n[language][elem.dataset.langKey];
+            });
+
+            document.querySelectorAll('[data-lang-key-html]').forEach(elem => {
+                elem.innerHTML = i18n[language][elem.dataset.langKeyHtml];
+            });
+
+            document.querySelectorAll('[data-hide-if-lang="فـا"]').forEach(elem => {
+                if (language === "فـا")
+                    elem.classList.add('hidden');
+                else
+                    elem.classList.remove('hidden');
+            });
+
+            document.querySelectorAll('[data-hide-if-lang="EN"]').forEach(elem => {
+                if (language === "EN")
+                    elem.classList.add('hidden');
+                else
+                    elem.classList.remove('hidden');
+            });
+        }
+
+        function changeLanguage() {
+            const lang = document.querySelector('.js-change-lang');
+
+            if (lang.innerText === "فـا") {
+                lang.innerText = "EN";
+                lang.classList.remove('farsi-font');
+
+                body.dir = "rtl";
+                body.classList.add('farsi-font');
+                setMessages("فـا");
+            } else {
+                lang.innerText = "فـا";
+                lang.classList.add('farsi-font');
+
+                body.dir = "ltr";
+                setMessages("EN");
+                body.classList.remove('farsi-font');
+            }
+        }
+
+        setMessages("EN"); // Default language is EN
     </script>
 
 </body>
