@@ -214,8 +214,8 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="buyMeACoffeeModal" tabindex="-1" aria-labelledby="buyMeACoffeeModal" aria-modal="true" role="dialog">
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto bg-gray-200 bg-opacity-80"
+        id="buyMeACoffeeModal" tabindex="-1" aria-labelledby="buyMeACoffeeModal" aria-modal="true" role="dialog" onclick="modalClickOutside(event);">
         <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable relative md:max-w-[80%] sm:max-w-full sm:w-full pointer-events-none m-auto">
             <div
@@ -450,6 +450,11 @@
                 modal.classList.remove('hidden');
             else
                 modal.classList.add('hidden');
+        };
+
+        function modalClickOutside(event) {                
+            if (document.elementFromPoint(event.clientX, event.clientY).id === "buyMeACoffeeModal")
+                toggleBuyMeACoffeeModal();
         };
     </script>
 
