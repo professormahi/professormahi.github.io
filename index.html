@@ -173,7 +173,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a class="link" href="#" data-tippy-content="Buy Me a Coffee">
+                    <a class="link" data-tippy-content="Buy Me a Coffee" onclick="toggleBuyMeACoffeeModal();">
                         <svg class="h-10 m-1 fill-current text-gray-600 hover:text-green-700" role="img"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>Buy Me A Coffee</title>
@@ -213,6 +213,93 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        id="buyMeACoffeeModal" tabindex="-1" aria-labelledby="buyMeACoffeeModal" aria-modal="true" role="dialog">
+        <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable relative md:max-w-[80%] sm:max-w-full sm:w-full pointer-events-none m-auto">
+            <div
+                class="modal-content border-none shadow-lg relative flex flex-col pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div
+                    class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-3xl font-medium leading-normal" id="buyMeACoffeeModalLabel">
+                        <span data-lang-key-html="buyMeACoffeeModalTitle"></span>
+                    </h5>
+                </div>
+                <div class="modal-body relative p-4">
+                    <p class="text-justify" data-lang-key-html="buyMeACoffeeModalGreeting"></p>
+
+                    <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 auto-cols-max">
+                        <div class="max-w-[300px] text-center m-auto align-top" data-hide-if-lang="EN">
+                            <!-- ZarinPal -->
+                            <h1 class="text-3xl pt-4 pb-2" data-hide-if-lang="EN">زرین پال</h1>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fzarinp.al%2Fmahdifooladgar&amp;size=300x300"
+                                alt="" title="ZarinPal" width="300" height="300" />
+                            <a target="_blank" class="text-green-900 hover:underline text-sm"
+                                href="https://zarinp.al/mahdifooladgar"
+                                data-hide-if-lang="EN">https://zarinp.al/mahdifooladgar</a>
+                        </div>
+
+                        <div class="max-w-[300px] text-center m-auto align-top" data-hide-if-lang="EN">
+                            <!-- Coffeete -->
+                            <h1 class="text-3xl pt-4 pb-2">کافیته</h1>
+                            <img class="m-auto"
+                                src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.coffeete.ir%2Fprofessormahi&amp;size=300x300"
+                                alt="" title="Coffeete" width="300" height="300" data-hide-if-lang="EN" />
+                            <a target="_blank" class="text-green-900 hover:underline text-sm"
+                                href="https://www.coffeete.ir/professormahi"
+                                data-hide-if-lang="EN">https://www.coffeete.ir/professormahi</a>
+                        </div>
+
+                        <div class="max-w-[300px] text-center m-auto align-top">
+                            <!-- PayNym -->
+                            <h1 class="text-3xl pt-4 pb-2">PayNym</h1>
+                            <img class="m-auto"
+                                src="https://api.qrserver.com/v1/create-qr-code/?data=PM8TJLZDAULzCMY5mFVkz2jUcTd5ZKgQ9RwQRXStq6wfxB5WsDsEQ8V1doCsrhztsuPW9ZP39Co1fkUfTkGT9vdSQUiMa3fk6p4VqCdQGtTrBNXEuSEk&amp;size=300x300"
+                                alt="" title="PayNym" width="300" height="300" />
+                            <a target="_blank" class="text-green-900 hover:underline text-sm"
+                                href="https://paynym.is/+redsilence693">https://paynym.is/+redsilence693</a>
+                        </div>
+
+                        <div class="max-w-[300px] text-center m-auto align-top">
+                            <!-- BTC -->
+                            <h1 class="text-3xl pt-4 pb-2">BTC</h1>
+                            <img class="m-auto"
+                                src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q3ptac6zgqws0fsyajkx07ytp3geznukyvjxyxh&amp;size=300x300"
+                                alt="" title="BTC Address" width="300" height="300" />
+                            <span class="break-all text-sm">bc1q3ptac6zgqws0fsyajkx07ytp3geznukyvjxyxh</span>
+                        </div>
+
+                        <div class="max-w-[300px] text-center m-auto align-top">
+                            <!-- ETH -->
+                            <h1 class="text-3xl pt-4 pb-2">ETH</h1>
+                            <img class="m-auto"
+                                src="https://api.qrserver.com/v1/create-qr-code/?data=0x87d0f98d72202e4d8cd0dd17b8124204f77f01f3&amp;size=300x300"
+                                alt="" title="ETH Address" width="300" height="300" />
+                            <span class="break-all text-sm">0x87d0f98d72202e4d8cd0dd17b8124204f77f01f3</span>
+                        </div>
+
+                        <div class="max-w-[300px] text-center m-auto align-top">
+                            <!-- ERG -->
+                            <h1 class="text-3xl pt-4 pb-2">ERG</h1>
+                            <img class="m-auto"
+                                src="https://api.qrserver.com/v1/create-qr-code/?data=9fMUzfcuFNvQk8pGfAmKurZ2ijoLZvaWxk4RHyGSGFKVkim6pa1&amp;size=300x300"
+                                alt="" title="ERG Address" width="300" height="300" />
+                            <span class="break-all text-sm">9fMUzfcuFNvQk8pGfAmKurZ2ijoLZvaWxk4RHyGSGFKVkim6pa1</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center p-4 border-t border-gray-200 rounded-b-md">
+                    <button type="button" onclick="toggleBuyMeACoffeeModal();"
+                        class="inline-block px-6 py-2.5 bg-gray-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out">
+                        <span data-lang-key="maybeLaterBtn"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const body = document.querySelector('body');
 
@@ -229,6 +316,14 @@
                     <a class="text-green-900 hover:underline" href="https://payampardaz.com/">PayamPardaz</a>
                     designing network security software.
                 `,
+                maybeLaterBtn: "Maybe later!",
+                buyMeACoffeeModalTitle: "Buy Me a Coffee <span style='font-family: sans-serif !important;'>😇</span>",
+                buyMeACoffeeModalGreeting: `
+                Thanks for you reaching this page. Nowadays, I'm researching Solidity smart-contract testing and trying to develop a tool for delivering smarter ones. 
+                Besides, I am interested in Blockchain, security protocols, and software security and working in these areas is my second giving back to the community. 
+                Hence, your support is a great encouragement for me to move faster. <br />
+                Anyway, there is a list of available ways to support my projects.`,
+
             },
             "فـا": {
                 name: "مهدی فولادگر",
@@ -236,12 +331,20 @@
                 location: "اصفهان، ایران",
                 about: `
                 دانشجوی دکتری مهندسی نرم‌افزار از 
-                    <a href="https://ut.ac.ir/en">دانشگاه تهران</a>، <br />                    
+                    <a class="text-green-900 hover:underline" href="https://ut.ac.ir/en">دانشگاه تهران</a>، <br />                    
                     علاقه‌مند به مباحث امنیتی، بلاک‌چین و نظریه بازی‌ها،
                     <br />
                      و مدیر محصول سامان
-                    <a href="https://payampardaz.com/">شرکت پیام‌پرداز</a>.
+                    <a class="text-green-900 hover:underline" href="https://payampardaz.com/">شرکت پیام‌پرداز</a>.
                 `,
+                maybeLaterBtn: "شاید بعدا!",
+                buyMeACoffeeModalTitle: "😇 برای من یک قهوه بخر...",
+                buyMeACoffeeModalGreeting: `
+                همین که تا این جا اومدی خیلیه!
+                من این اواخر و در قالب پایان‌نامه دکتری دارم روی قراردادهای هوشمند اتریوم کار می‌کنم و تلاش می‌کنم ابزاری را تولید کنم که فرایند تست قراردادهای هوشمند را بهبود بده.
+                همین طور در کنارش علاقه‌مند و فعال در حوزه‌های بلاک‌چین، پروتکل‌های امنیتی، امنیت نرم‌افزار و نرم‌افزارهای امنیتی هستم.
+                از آن‌جایی که من همیشه دوست داشتم و دارم که به کامیونیتی دینم را ادا کنم، حمایت شما قوت قلبی برام می‌شه. <br />
+                به هرحال؛ این لیستی از روش‌های حمایت مالی از من هست:`,
             }
         }
 
@@ -303,6 +406,7 @@
         //Toggle mode
         const toggle = document.querySelector('.js-change-theme');
         const profile = document.getElementById('profile');
+        const modalContent = document.querySelector('#buyMeACoffeeModal .modal-content');
 
 
         toggle.addEventListener('click', () => {
@@ -319,6 +423,8 @@
                 body.classList.add('text-gray-100');
                 profile.classList.remove('bg-white');
                 profile.classList.add('bg-gray-900');
+                modalContent.classList.remove('bg-white');
+                modalContent.classList.add('bg-gray-900');
             } else {
                 toggle.innerHTML = `
                 <svg class="h-8 fill-current text-green-900" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -332,9 +438,19 @@
                 body.classList.add('text-gray-900');
                 profile.classList.remove('bg-gray-900');
                 profile.classList.add('bg-white');
+                modalContent.classList.remove('bg-gray-900');
+                modalContent.classList.add('bg-white');
 
             }
         });
+
+        function toggleBuyMeACoffeeModal() {
+            const modal = document.getElementById('buyMeACoffeeModal');
+            if (modal.classList.contains('hidden'))
+                modal.classList.remove('hidden');
+            else
+                modal.classList.add('hidden');
+        };
     </script>
 
 </body>
